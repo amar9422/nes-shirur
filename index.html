@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>शाळेचा वारसा | न्यू इंग्लिश स्कूल अँड ज्यु.कॉलेज शिरूर
+</title>
+
+<style>
+
+/* =========================
+   BASIC RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+    "Noto Sans Devanagari",
+    "Mangal",
+    Arial,
+    sans-serif;
+
+    background:#f4f8f2;
+    color:#26352a;
+
+    line-height:1.8;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+header{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(7,48,22,.72),
+        rgba(7,48,22,.90)
+    ),
+    url("images/vad-main.jpg")
+    center/cover;
+
+    position:relative;
+}
+
+.hero{
+    max-width:1000px;
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:7px 20px;
+
+    border:1px solid rgba(255,255,255,.5);
+
+    border-radius:30px;
+
+    margin-bottom:20px;
+
+    background:rgba(255,255,255,.12);
+}
+
+.hero h1{
+
+    font-size:
+    clamp(40px,7vw,78px);
+
+    line-height:1.2;
+
+    margin-bottom:10px;
+}
+
+.hero h2{
+
+    font-size:
+    clamp(25px,4vw,42px);
+
+    color:#dff6bd;
+}
+
+.hero p{
+
+    font-size:18px;
+
+    margin-top:15px;
+}
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:13px 30px;
+
+    border-radius:30px;
+
+    background:#dff5bd;
+
+    color:#173c20;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.25);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:
+    rgba(10,50,25,.97);
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:5px;
+
+    padding:9px;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    background:#3a6e41;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+section{
+
+    max-width:1150px;
+
+    margin:auto;
+
+    padding:75px 20px;
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.section-title h2{
+
+    font-size:36px;
+
+    color:#24582d;
+
+    margin-bottom:5px;
+}
+
+.section-title p{
+
+    color:#6a756c;
+}
+
+
+/* =========================
+   SCHOOL
+========================= */
+
+.school-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.08);
+}
+
+.school-card h2{
+
+    color:#20572a;
+
+    font-size:32px;
+}
+
+.school-card p{
+
+    margin-top:8px;
+}
+
+
+/* =========================
+   FOUNDERS
+========================= */
+
+.founders{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:30px;
+}
+
+.person-card{
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.person-card:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.12);
+}
+
+.person-card img{
+
+    width:210px;
+
+    height:210px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid #dcefd5;
+
+    margin-bottom:15px;
+}
+
+.person-card h3{
+
+    color:#20572b;
+
+    font-size:24px;
+}
+
+.role{
+
+    color:#47714e;
+
+    font-weight:bold;
+
+    margin:5px 0;
+}
+
+
+/* =========================
+   HISTORY
+========================= */
+
+.history{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.07);
+}
+
+.history p{
+
+    margin-bottom:18px;
+}
+
+.quote{
+
+    margin:30px 0;
+
+    padding:25px;
+
+    border-left:
+    6px solid #4e8b45;
+
+    background:#edf8e9;
+
+    border-radius:10px;
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    color:#28572f;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:18px;
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.gallery img:hover{
+
+    transform:scale(1.04);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.2);
+}
+
+
+/* =========================
+   AUDIO / VIDEO
+========================= */
+
+.media-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.media-box h3{
+
+    color:#24592e;
+
+    font-size:25px;
+}
+
+audio{
+
+    width:100%;
+
+    max-width:650px;
+
+    margin-top:20px;
+}
+
+video{
+
+    width:100%;
+
+    max-height:600px;
+
+    border-radius:18px;
+
+    margin-top:15px;
+
+    background:#000;
+}
+
+
+/* =========================
+   STAFF
+========================= */
+
+.staff-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:25px;
+}
+
+.staff-profile{
+
+    overflow:hidden;
+}
+
+.staff-profile img{
+
+    width:190px;
+
+    height:190px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid #dcefd5;
+
+    margin-bottom:15px;
+}
+
+.staff-profile h3{
+
+    margin-bottom:5px;
+
+    font-size:23px;
+}
+
+.staff-profile .role{
+
+    font-weight:bold;
+
+    color:#397044;
+}
+
+
+/* =========================
+   ACTIVITY
+========================= */
+
+.activity{
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #e9f5e4,
+        #f9fff5
+    );
+
+    border-radius:25px;
+
+    padding:45px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.06);
+}
+
+.activity h2{
+
+    color:#23592c;
+
+    margin-bottom:15px;
+}
+
+.activity-name{
+
+    font-size:27px;
+
+    font-weight:bold;
+
+    color:#285d31;
+}
+
+
+/* =========================
+   ENVIRONMENT
+========================= */
+
+.environment{
+
+    text-align:center;
+}
+
+.environment-icon{
+
+    font-size:70px;
+
+    margin-bottom:10px;
+}
+
+.environment-message{
+
+    font-size:22px;
+
+    color:#2b5d31;
+
+    font-weight:bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:#102e19;
+
+    color:white;
+
+    text-align:center;
+
+    padding:45px 20px;
+}
+
+footer h2{
+
+    margin-bottom:5px;
+}
+
+footer h3{
+
+    color:#d9efce;
+}
+
+footer p{
+
+    color:#cbd8ce;
+}
+
+
+/* =========================
+   IMAGE MODAL
+========================= */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:3000;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,.92);
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+}
+
+.modal img{
+
+    max-width:95%;
+
+    max-height:90vh;
+
+    border-radius:15px;
+}
+
+.close{
+
+    position:absolute;
+
+    top:15px;
+
+    right:30px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    nav{
+
+        justify-content:flex-start;
+
+        overflow-x:auto;
+
+        flex-wrap:nowrap;
+
+        white-space:nowrap;
+    }
+
+    section{
+
+        padding:55px 15px;
+    }
+
+    .founders{
+
+        grid-template-columns:1fr;
+    }
+
+    .staff-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .gallery{
+
+        grid-template-columns:
+        1fr 1fr;
+    }
+
+    .gallery img{
+
+        height:170px;
+    }
+
+    .history{
+
+        padding:25px;
+    }
+
+    .school-card{
+
+        padding:25px;
+    }
+
+    .school-card h2{
+
+        font-size:25px;
+    }
+
+    .person-card img{
+
+        width:180px;
+
+        height:180px;
+    }
+}
+
+
+@media(max-width:430px){
+
+    .gallery{
+
+        grid-template-columns:1fr;
+    }
+
+    .gallery img{
+
+        height:220px;
+    }
+
+    .hero p{
+
+        font-size:16px;
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<header id="home">
+
+    <div class="hero">
+
+        <div class="badge">
+            🌳 शाळेचा डिजिटल वारसा
+        </div>
+
+        <h1>
+            आमच्या शाळेचा वारसा
+        </h1>
+
+        <h2>
+            वडाचे झाड
+        </h2>
+
+        <p>
+
+            रयत शिक्षण संस्थेचे<br>
+
+            <strong>
+                न्यू इंग्लिश स्कूल अँड ज्यु.कॉलेज शिरूर
+
+            </strong>
+
+            <br>
+
+            ता. शिरूर, जि. पुणे – ४१२२१०
+
+        </p>
+
+        <a
+        href="#history"
+        class="btn">
+
+            🌿 वडाच्या झाडाची कहाणी पाहा
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<nav>
+
+    <a href="#home">
+        मुख्यपृष्ठ
+    </a>
+
+    <a href="#school">
+        शाळा
+    </a>
+
+    <a href="#founders">
+        संस्थापक
+    </a>
+
+    <a href="#history">
+        इतिहास
+    </a>
+
+    <a href="#gallery">
+        फोटो
+    </a>
+
+    <a href="#song">
+        गाणे
+    </a>
+
+    <a href="#video">
+        व्हिडिओ
+    </a>
+
+    <a href="#team">
+        मार्गदर्शक
+    </a>
+
+</nav>
+
+
+<!-- =========================================
+     SCHOOL
+========================================= -->
+
+<section id="school">
+
+    <div class="section-title">
+
+        <h2>
+            🏫 आमची शाळा
+        </h2>
+
+        <p>
+            ज्ञान • संस्कार • पर्यावरण • तंत्रज्ञान
+        </p>
+
+    </div>
+
+
+    <div class="school-card">
+
+        <h2>
+            रयत शिक्षण संस्थेचे
+        </h2>
+
+        <h2>
+           न्यू इंग्लिश स्कूल आणि ज्यु.कॉलेज, शिरूर
+
+        </h2>
+
+        <p>
+            ता. शिरूर, जि. पुणे – ४१२२१०
+        </p>
+
+        <p>
+
+            शिक्षणासोबत संस्कार,
+            पर्यावरण संवर्धन आणि
+            आधुनिक तंत्रज्ञानाची सांगड
+            घालणारी शैक्षणिक वाटचाल.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FOUNDERS
+========================================= -->
+
+<section id="founders">
+
+    <div class="section-title">
+
+        <h2>
+            🏛️ संस्था व शाळेचा वारसा
+        </h2>
+
+        <p>
+            ज्यांच्या योगदानातून हा शैक्षणिक वारसा उभा राहिला
+        </p>
+
+    </div>
+
+
+    <div class="founders">
+
+
+        <!-- INSTITUTE FOUNDER -->
+
+        <div class="person-card">
+
+            <img
+            src="karmaveer.jpeg"
+            alt="डॉ. कर्मवीर भाऊराव पाटील">
+
+            <h3>
+                डॉ. कर्मवीर भाऊराव पाटील
+            </h3>
+
+            <p class="role">
+                रयत शिक्षण संस्थेचे- संस्थापक
+            </p>
+
+            <p>
+
+                शिक्षण सर्वसामान्यांपर्यंत
+                पोहोचावे या ध्येयाने कार्य
+                करणारे महान शिक्षणमहर्षी.
+
+            </p>
+
+        </div>
+
+
+        <!-- SCHOOL FOUNDER -->
+
+        <div class="person-card">
+
+            <img
+            src="pathan.jpeg"
+            alt="स्व. शहीदभाई पठाण">
+
+            <h3>
+                स्व. शहीदभाई पठाण
+            </h3>
+
+            <p class="role">
+                न्यू इंग्लिश स्कूल शिरूर शाखेचे- संस्थापक
+            </p>
+
+            <p>
+
+                शैक्षणिक विकासासाठी योगदान देणारे
+                आणि या विद्यालयाच्या उभारणीत
+                महत्त्वाची भूमिका बजावणारे संस्थापक.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     HISTORY
+========================================= -->
+
+<section id="history">
+
+    <div class="section-title">
+
+        <h2>
+            🌳 वडाच्या झाडाचा इतिहास
+        </h2>
+
+        <p>
+            एक वृक्ष... अनेक आठवणी...
+            अनेक पिढ्यांचा साक्षीदार
+        </p>
+
+    </div>
+
+
+    <div class="history">
+
+
+        <p>
+
+            आमच्या शाळेच्या प्रांगणात उभे असलेले
+            हे भव्य वडाचे झाड केवळ एक वृक्ष नसून
+            शाळेच्या अनेक वर्षांच्या आठवणींचे
+            आणि संस्कृतीचे जिवंत प्रतीक आहे.
+
+        </p>
+
+
+        <p>
+
+            या वृक्षाच्या विशाल फांद्यांच्या सावलीत
+            अनेक विद्यार्थी घडले, शिक्षकांनी विद्यार्थ्यांना
+            मार्गदर्शन केले आणि शाळेतील असंख्य
+            सुंदर क्षणांचे हे झाड साक्षीदार राहिले आहे.
+
+        </p>
+
+
+        <p>
+
+            असे मानले जाते की हे वडाचे झाड
+
+            <strong>
+                [येथे स्थापना वर्ष लिहा]
+            </strong>
+
+            या कालावधीत शाळेच्या प्रांगणात
+            लावण्यात आले.
+
+        </p>
+
+
+        <p>
+
+            त्यानंतरच्या काळात या झाडाची वाढ होत गेली
+            आणि आज त्याचा विस्तार शाळेच्या परिसराचे
+            एक वैशिष्ट्य बनला आहे.
+
+        </p>
+
+
+        <p>
+
+            विद्यार्थ्यांच्या शैक्षणिक, सांस्कृतिक आणि
+            सामाजिक उपक्रमांशी या वृक्षाच्या अनेक
+            आठवणी जोडलेल्या आहेत.
+
+            <strong>
+                [येथे विशेष घटना / आठवण लिहा]
+            </strong>
+
+        </p>
+
+
+        <p>
+
+            उन्हाळ्यात विद्यार्थ्यांना थंड सावली देणारे,
+            पावसाळ्यात हिरवाईने नटणारे आणि अनेक
+            पक्ष्यांना निवारा देणारे हे वडाचे झाड
+            पर्यावरण संवर्धनाचे सुंदर उदाहरण आहे.
+
+        </p>
+
+
+        <div class="quote">
+
+            “वृक्ष फक्त सावली देत नाहीत;
+            ते पुढच्या पिढ्यांसाठी आठवणी,
+            जीवन आणि भविष्य निर्माण करतात.”
+
+        </div>
+
+
+        <p>
+
+            या ऐतिहासिक वृक्षाचे संवर्धन करणे ही
+            केवळ शाळेची जबाबदारी नसून प्रत्येक विद्यार्थी,
+            शिक्षक आणि समाजाची सामूहिक जबाबदारी आहे.
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                टीप:
+            </strong>
+
+            वरील इतिहासातील कंसातील माहिती
+            तुम्ही शाळेच्या अधिकृत माहितीनुसार
+            नंतर बदलू शकता.
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     GALLERY
+========================================= -->
+
+<section id="gallery">
+
+    <div class="section-title">
+
+        <h2>
+            📸 वडाच्या झाडाच्या आठवणी
+        </h2>
+
+        <p>
+            आमच्या शाळेच्या प्रांगणातील सुंदर क्षण
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+
+        <img
+        src="vad.jpeg"
+        alt="वडाचे झाड"
+        onclick="openImage(this.src)">
+
+
+        <img
+        src="vad2.jpeg"
+        alt="वडाचे झाड"
+        onclick="openImage(this.src)">
+
+
+        <img
+        src="vad3.jpeg"
+        alt="वडाचे झाड"
+        onclick="openImage(this.src)">
+
+
+        <img
+        src="vad4.jpeg"
+        alt="शाळेतील वडाचे झाड"
+        onclick="openImage(this.src)">
+
+
+        <img
+        src="vad5.jpeg"
+        alt="वडाच्या झाडाखालील परिसर"
+        onclick="openImage(this.src)">
+
+
+        <img
+        src="vad6.jpeg"
+        alt="शाळेचा परिसर"
+        onclick="openImage(this.src)">
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     SONG
+========================================= -->
+
+<section id="song">
+
+    <div class="section-title">
+
+        <h2>
+            🎵 वडाच्या झाडावर खास गाणे
+        </h2>
+
+        <p>
+            आमच्या शाळेच्या वारशाला समर्पित
+        </p>
+
+    </div>
+
+
+    <div class="media-box">
+
+        <h3>
+            🌳 “आमच्या शाळेचा वड”
+        </h3>
+
+
+        <p>
+
+            या विभागात शाळेच्या वडाच्या झाडावर
+            तयार केलेले खास गाणे ऐकता येईल.
+
+        </p>
+
+
+        <audio controls>
+
+            <source
+            src="vad.mp3"
+            type="audio/mpeg">
+
+            तुमचा ब्राउझर Audio Player ला
+            support करत नाही.
+
+        </audio>
+
+
+        <p style="margin-top:20px;">
+
+            <strong>
+                गाण्याचे बोल येथे लिहा...
+            </strong>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     VIDEO
+========================================= -->
+
+<section id="video">
+
+    <div class="section-title">
+
+        <h2>
+            🎬 वडाच्या झाडाचा व्हिडिओ
+        </h2>
+
+        <p>
+            गाणे आणि वडाच्या झाडाच्या आठवणींचा व्हिडिओ
+        </p>
+
+    </div>
+
+
+    <div class="media-box">
+
+        <video
+        controls
+        poster="vad.jpeg">
+
+            <source
+            src="vad.mp4"
+            type="video/mp4">
+
+            तुमचा ब्राउझर Video Player ला
+            support करत नाही.
+
+        </video>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     STAFF
+========================================= -->
+
+<section id="team">
+
+    <div class="section-title">
+
+        <h2>
+            👨‍🏫 शाळेचे मार्गदर्शक व उपक्रम प्रमुख
+        </h2>
+
+        <p>
+            शाळेच्या शैक्षणिक, तांत्रिक आणि
+            नाविन्यपूर्ण वाटचालीसाठी कार्यरत
+        </p>
+
+    </div>
+
+
+    <div class="staff-grid">
+
+
+        <!-- PRINCIPAL -->
+
+        <div class="person-card staff-profile">
+
+            <img
+            src="principal.jpeg"
+            alt="प्राचार्य श्री. मचाले एस.एच ">
+
+            <h3>
+                श्री. मचाले एस.एच. सर 
+            </h3>
+
+            <p class="role">
+                प्राचार्य
+            </p>
+
+            <p>
+             न्यू इंग्लिश स्कूल अँड ज्यु.कॉलेज शिरूर
+            </p>
+
+        </div>
+
+
+        <!-- SUPERVISOR -->
+
+        <div class="person-card staff-profile">
+
+            <img
+            src="supervisor.jpeg"
+            alt="पर्यवेक्षक श्री. सरोदे ए. के.">
+
+            <h3>
+                श्री. सरोदे ए. के. सर 
+            </h3>
+
+            <p class="role">
+                पर्यवेक्षक
+            </p>
+
+            <p>
+                न्यू इंग्लिश स्कूल अँड ज्यु.कॉलेज शिरूर
+
+            </p>
+
+        </div>
+
+
+        <!-- AI HEAD JUNIOR -->
+
+        <div class="person-card staff-profile">
+
+            <img
+            src="gavitre.jpeg"
+            alt="श्री. गावीत्रे सर">
+
+            <h3>
+                श्री. गावीत्रे ए.व्ही. सर
+            </h3>
+
+            <p class="role">
+                कृत्रिम बुद्धिमत्ता प्रमुख
+            </p>
+
+            <p>
+                कनिष्ठ विभाग 
+            </p>
+
+        </div>
+
+
+        <!-- AI HEAD SECONDARY -->
+
+        <div class="person-card staff-profile">
+
+            <img
+            src="pardhi.jpeg"
+            alt="श्री. पारधी सर">
+
+            <h3>
+                श्री. पारधी एल.पी. सर
+            </h3>
+
+            <p class="role">
+                कृत्रिम बुद्धिमत्ता प्रमुख
+            </p>
+
+            <p>
+                माध्यमिक विभाग 
+            </p>
+
+        </div>
+
+
+        <!-- ACTIVITY PERSON -->
+
+        <div class="person-card staff-profile">
+
+            <img
+            src="sarode.jpeg"
+            alt="श्री. सरोदे ए. बी.">
+
+            <h3>
+                श्री. सरोदे ए. बी.(अभियंता)
+            </h3>
+
+            <p class="role">
+                Thinking Coach
+            </p>
+
+            <p>
+                <strong>
+                    ENpower Pvt. Ltd.
+                </strong>
+            </p>
+
+            <p>
+                B.Tech. • B.Ed. • E&TC Engineer
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     ACTIVITY
+========================================= -->
+
+<section>
+
+    <div class="activity">
+
+        <h2>
+            💡 उपक्रम
+        </h2>
+
+
+        <p style="margin-top:15px;">
+
+            विद्यार्थ्यांमध्ये सर्जनशीलता,
+            विचारशक्ती, AI आणि आधुनिक
+            तंत्रज्ञानाचा वापर वाढविण्यासाठी
+            विविध नाविन्यपूर्ण उपक्रम.
+
+        </p>
+
+
+        <br>
+
+
+        <div class="activity-name">
+
+            श्री. सरोदे ए. बी.(अभियंता)
+
+        </div>
+
+
+        <p>
+            Thinking Coach
+        </p>
+
+
+        <p>
+
+            <strong>
+                ENpower Pvt. Ltd.
+            </strong>
+
+        </p>
+
+
+        <p>
+
+            B.Tech. • B.Ed. • E&TC Engineer
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     ENVIRONMENT
+========================================= -->
+
+<section class="environment">
+
+    <div class="section-title">
+
+        <div class="environment-icon">
+            🌱
+        </div>
+
+
+        <h2>
+            वृक्षसंवर्धनाचा संदेश
+        </h2>
+
+    </div>
+
+
+    <p class="environment-message">
+
+        “आज एक झाड जपा,
+        उद्या अनेक पिढ्यांचे भविष्य जपा.”
+
+    </p>
+
+
+    <p style="margin-top:15px;">
+
+        चला, आपल्या शाळेतील या ऐतिहासिक
+        वडाच्या झाडाचे संवर्धन करूया आणि
+        पुढील पिढ्यांसाठी हा वारसा जतन करूया.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <h2>
+        रयत शिक्षण संस्थेचे
+    </h2>
+
+
+    <h3>
+        न्यू इंग्लिश स्कूल अँड ज्यु.कॉलेज शिरूर
+
+    </h3>
+
+
+    <p>
+        ता. शिरूर, जि. पुणे – ४१२२१०
+    </p>
+
+
+    <p style="margin-top:15px;">
+
+        🌳रयत शिक्षण संस्थेचा झेंडा सदैव उंचावू 🌳
+
+    </p>
+
+
+    <p style="margin-top:20px;font-size:13px;">
+
+        Digital Heritage Initiative by Er.Amar Bapusaheb Sarode.
+
+    </p>
+
+</footer>
+
+
+<!-- =========================================
+     IMAGE MODAL
+========================================= -->
+
+<div
+class="modal"
+id="imageModal">
+
+
+    <span
+    class="close"
+    onclick="closeImage()">
+
+        ×
+
+    </span>
+
+
+    <img
+    id="modalImage"
+    src=""
+    alt="मोठा फोटो">
+
+
+</div>
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script>
+
+
+/* OPEN IMAGE */
+
+function openImage(src){
+
+    document
+    .getElementById("imageModal")
+    .style.display="flex";
+
+
+    document
+    .getElementById("modalImage")
+    .src=src;
+
+}
+
+
+/* CLOSE IMAGE */
+
+function closeImage(){
+
+    document
+    .getElementById("imageModal")
+    .style.display="none";
+
+}
+
+
+/* CLICK OUTSIDE IMAGE */
+
+document
+.getElementById("imageModal")
+.addEventListener(
+    "click",
+    function(e){
+
+        if(e.target === this){
+
+            closeImage();
+
+        }
+
+    }
+);
+
+
+/* ESC KEY */
+
+document
+.addEventListener(
+    "keydown",
+    function(e){
+
+        if(e.key === "Escape"){
+
+            closeImage();
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+</html>
